@@ -52,14 +52,16 @@
                     value="<%= prod.codigo %>"
                     id="codigoInput"
                 >
-                <button
+                <div class="container text-center mt-4">
+                    <button
                     class="btn btn-warning btn-lg"
                     type="submit"
                 >
                     Editar
                 </button>
-                <a href="/productos" class="btn btn-success btn-lg">Volver a Productos</a>
+                <a href="/productos" class="btn btn-primary btn-lg">Volver a Productos</a>
                 <button class="btn btn-danger btn-lg " id="btnEliminar" data-id="<%= prod.id %>" >Eliminar</button>
+                </div>
 
             </form>
 
