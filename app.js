@@ -39,7 +39,7 @@ app.use('/productos', require('./router/Productos'));
 app.use((req, res, next) => {
     res.status(404).render("404", {
         titulo: "404",
-        descripcion: "Título del sitio web"
+        descripcion: "Enlace invalido, Pagina no encontarada"
     })
 })
 

@@ -1,4 +1,4 @@
-<%- include("template/cabecera", {tituloWeb: 'Página de inicio'}) %>
+<%- include("template/cabecera2", {tituloWeb: 'Página de inicio'}) %>
 
     <div class="container">
 
@@ -7,11 +7,12 @@
         <a
             class="btn btn-success btn-block my-4"
             href="/productos/crear"
+            style="background-color: rgba(9,23,45,255);"
         >
-            Crear nueva Mascota
+            Crear nuevo producto
         </a>
 
-        <table class="table">
+        <table class="table table-dark table-striped"  style="background-color: rgba(9,23,45,255);">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -36,7 +37,7 @@
                             <td><%= prod.categoria %></td>
                             <td><%= prod.codigo %></td>
                             <td> 
-                                <a href="productos/<%= prod.id %>" class="btn btn-warning btn-sm">Editar</a>
+                                <a href="productos/<%= prod.id %>" class="btn btn-secondary btn-sm">Editar</a>
                             </td>
                         </tr>
                     

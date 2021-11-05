@@ -1,4 +1,4 @@
-<%- include("template/cabecera", {tituloWeb: 'Detalle de productos'}) %>
+<%- include("template/cabecera2", {tituloWeb: 'Detalle de productos'}) %>
 
     <div class="container">
         <h1>Detalle Productos</h1>
@@ -12,6 +12,7 @@
         <% if (!error) { %>
 
             <form id="formularioEditar" data-id="<%= prod.id %>">
+                <label for="" class="my-2">Nombre</label>
                 <input 
                     type="text"
                     class="form-control my-2"
@@ -19,13 +20,15 @@
                     value="<%= prod.nombre %>"
                     id="nombreInput"
                 >
+                <label for="" class="my-2">Precio</label>
                 <input 
-                    type="text"
+                    type="number"
                     class="form-control my-2"
                     name="precio"
                     value="<%= prod.precio %>"
                     id="precioInput"
                 >
+                <label for="" class="my-2">Descripcion</label>
                 <input 
                     type="text"
                     class="form-control my-2"
@@ -33,6 +36,7 @@
                     value="<%= prod.descripcion %>"
                     id="descripcionInput"
                 >
+                <label for="" class="my-2">Categoria</label>
                 <input 
                     type="text"
                     class="form-control my-2"
@@ -40,6 +44,7 @@
                     value="<%= prod.categoria %>"
                     id="categoriaInput"
                 >
+                <label for="" class="my-2">Codigo</label>
                 <input 
                     type="text"
                     class="form-control my-2"
@@ -48,22 +53,18 @@
                     id="codigoInput"
                 >
                 <button
-                    class="btn btn-warning btn-block"
+                    class="btn btn-warning btn-lg"
                     type="submit"
                 >
                     Editar
                 </button>
+                <a href="/productos" class="btn btn-success btn-lg">Volver a Productos</a>
+                <button class="btn btn-danger btn-lg " id="btnEliminar" data-id="<%= prod.id %>" >Eliminar</button>
+
             </form>
 
             <hr>
 
-            <button
-                class="btn btn-danger btn-sm mt-5"
-                id="btnEliminar"
-                data-id="<%= prod.id %>"
-            >
-                Eliminar
-            </button>
         <% } %>
     </div>
     

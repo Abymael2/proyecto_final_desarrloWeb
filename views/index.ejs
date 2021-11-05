@@ -1,6 +1,182 @@
 <%- include("template/cabecera", {tituloWeb: 'Página de inicio'}) %>
 
-    <h1 class="text-primary">Titulo de mi sitio web Index</h1>
-    <h2><%= titulo %></h2>
+    <div class="container">
 
+        <div class="correo">
+            <a href="mailto:rpurt@miumg.edu.gt">rpurt@miumg.edu.gt</a>
+            <p>————————</p>
+        </div>
+
+
+        <div class="redes">
+            <a href="https://github.com/Abymael2" target="_blank"><img src="img/Github_icon-icons.com_64px.png" alt=""></a>
+            
+            <img src="img/Instagram_icon-icons_64px.png" alt="">
+            <img src="img/Twitter_icon-icons.com_64px.png" alt="">
+            <img src="img/Facebook_icon-icons.com_64px.png" alt="">
+            <p><b>————————</b></p>
+        </div>
+
+        <!-- <nav class="navegacion nav justify-content-end">
+            <img src="img/wolf_256px.png" alt="" class="logo">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="productos_electricos.html">Electronica</a></li>
+                <li class="nav-item"><a href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#info">Informacion</a></li>
+                <li class="nav-item"><a href="#exp">Experiencia</a></li>
+                <li class="nav-item"><a href="#trabajo">Proyectos</a></li>
+                <li class="nav-item"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav> -->
+
+        <a name="inicio" ></a>
+        <div class="inicio">
+            <p class="hola">Hola, mi nombre es</p>
+
+            <h1 class="nombre">Abimael Pur</h1>
+            <h2 class="slogan">Desarrollo Paginas Web.</h2>
+
+            <p class="descripcion">Soy estuduiante de Ingenieria en Sistemas especializado en crear experiencias digitales excepcionales. Actualmente, me centro en la creación de productos accesibles y centrados par mi propia Web</p>
+        </div>
+
+        <a name="info" ></a>
+        <div class="info row">
+            <div class="info-titulo" id="" style="margin-top: 100px;"><h2>Informacion</h2></div>
+            <div class="info-txt col">
+                <p>Mi nombre es Abimael y disfruto creando cosas que viven en Internet. Mi interés en el desarrollo web comenzó este año 2021 cuando decidí intentar editar temas personalizados en Bootstrap. ¡Resulta que editando las caracteristicas del codigo me enseñó mucho sobre HTML y CSS!</p>
+                <p>Avance rápido hasta el día de hoy, y durante el septimo semestre tuve la oportunidad de trabajar en un equipo para desarrollar una pagina web para una empresa, en el curso de analis de sistemas 1. Mi enfoque principal en estos días es crear productos accesibles e inclusivos y experiencias digitales en mi propia pagina web para una variedad de clientes. </p>
+                <p>Aquí hay algunas tecnologías con las que he estado trabajando recientemente:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                </ul>
+                <ul>
+                    <li>C++</li>
+                    <li>Oracel</li>
+                    <li>My SQL</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="foto col">
+                <img src="img/partyanimals1 (2).jpg" alt="">
+            </div>
+        </div>
+        <div class="infogram-embed col-6 p-2">
+            <script id="infogram_0_82bb49b0-226f-4c72-ac57-fad581ddb4c4" title="Column Stacked Chart" src="https://e.infogram.com/js/dist/embed.js?mUB" type="text/javascript"></script>
+        </div>
+
+
+        <div class="exp" id="exp">
+            <h2>Experiencia</h2>
+            <div class="exp1">
+                <h3>Desarrollo de mi Propio lenguaje de Programacion</h3>
+                <h4>Febrero 2021 - Junio 2021</h4>
+                <p>Haber desarrollado en C# la simulación de un compilador de mi propio lenguaje de programación. Simulando las 4 primeras fases de un compilador Analizador Léxico, Sintáctico, Semántico y el generador de código final.</p>
+            </div>
+
+            <div class="exp2">
+                <h3>Arbol grafico de expresiones Matematicas</h3>
+                <h4>Julio 2020 - Septiembre 2020</h4>
+                <p>Desarrollo de un programa capaz de graficar en un árbol la estructura de una expresión matemática tomando en cuenta la jerarquía de operaciones.</p>
+            </div>
+
+            <div class="exp3">
+                <h3>Pagina Web para servidor web local</h3>
+                <p>Desarrollar una pagina web simple para ser incluida en un servidor web montado en Ubuntu con todas las configuraciones correspondientes. </p>
+            </div>
+            <div class="exp2">
+                <h3>Servidor Linux</h3>
+                <p>Experiencia en la implementación y configuración de un servidor en Ubuntu Linux con servicios de DHCP, DNS, FTP, Exchange, BD Oracle, Streaming y un servidor WEB.</p>
+            </div>
+            <div class="exp3">
+                <h3>Servidor Windows</h3>
+                <p>Experiencia en la implementación y configuración de servidor Windows server 2019 con servicios de DHCP, DNS y Active Directory.</p>
+            </div>
+        </div>
+        
+        
+            
+        <div class="trabajo" id="trabajo">
+            <h2>Proyectos</h2>
+            <div class="img1 row align-items-center">
+                <div class="col selec justify-content-center">
+                    <h2 id="arbol">Arbol grafico de expresiones Matemáticas</h2>
+                    <a class="btn " href="proy_arbol.html" role="button">Ver</a>
+                </div>
+                <div class="col">
+                    <img src="img/arbol3.PNG" alt="" class="img-galeria">
+                </div>
+            </div>
+            <div class="img1 row align-items-center">
+                <div class="col selec">
+                    <h2 id="compi">Compilador en C#</h2>
+                    <a class="btn " href="proy_compilador.html" role="button">Ver</a>
+                </div>
+                <div class="col">
+                    <img src="img/compi3.png" alt="" class="3 img-galeria">
+                </div>
+            </div>
+            <div class="img1 row align-items-center">
+                <div class="col selec">
+                    <h2 id="cli">Programa CLI con Node</h2>
+                    <a class="btn " href="proy_cli_node.html" role="button">Ver</a>
+                </div>
+                <div class="col">
+                    <img src="img/cli_node2.png" alt="" class="3 img-galeria">
+                </div>
+            </div>
+            <div class="img1 row align-items-center">
+                <div class="col selec">
+                    <h2 id="cafe">Sistema Web para una cafetería</h2>
+                    <a class="btn " href="proy_sys_cafeteria.html" role="button">Ver</a>
+                </div>
+                <div class="col">
+                    <img src="img/sys_cafe1.PNG" alt="" class="3 img-galeria">
+                </div>
+            </div>
+
+        <section class="image-light">
+            <img src="img/close.svg" alt="" class="close"> 
+            <img src="img/compi1.png" alt="" class="agregar-imagen">
+        </section>
+
+        <a name="contacto" ></a>
+        <div class="contacto">
+            <h2 style="margin-top: 100px;">Contacto</h2>
+            <hr>
+            <footer>
+                <ul class="lista-contacto">
+                    <li>Correo: rpurt@miumg.edu.gt</li>
+                    <li>Telefono: 5581-4034</li>
+
+                </ul>
+
+                <div class="form-contacto">
+                    <form action="" method="post" onsubmit="return validar();">
+                        <div class="form-datos">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="form-datos">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido">
+                        </div>
+                        <div class="form-datos">
+                            <label for="correo">Correo</label>
+                            <input type="email" id="correo">
+                        </div>
+                        <div class="form-datos">
+                            <label for="telefono">Telefono</label>
+                            <input type="text" id="telefono">
+                        </div>
+                        <div class="enviar">
+                            <input class="btn-enviar" type="submit" name="" id="">
+                        </div>
+                    </form>
+                </div>
+            </footer>
+        </div>
+    </div>
 <%- include("template/footer") %>
