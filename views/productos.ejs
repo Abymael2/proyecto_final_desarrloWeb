@@ -1,0 +1,50 @@
+<%- include("template/cabecera", {tituloWeb: 'Página de inicio'}) %>
+
+    <div class="container">
+
+        <h1>CRUD Mongo</h1>
+
+        <!-- <a
+            class="btn btn-success btn-block my-4"
+            href="/mascotas/crear"
+        > -->
+            Crear nueva Mascota
+        </a>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Código</th>
+                <th scope="col">Acción</th>
+              </tr>
+            </thead>
+            <tbody>
+                
+                <% if (arrayProductos.length > 0) { %>
+                    <% arrayProductos.forEach(prod => { %>
+                        
+                        <tr>
+                            <th scope="row"><%= prod.id %> </th>
+                            <td><%= prod.nombre %></td>
+                            <td><%= prod.precio %></td>
+                            <td><%= prod.descripcion %></td>
+                            <td><%= prod.categoria %></td>
+                            <td><%= prod.codigo %></td>
+                            <td> </td>
+                        </tr>
+                    
+                    <% }) %>
+                <% } %>
+
+            </tbody>
+          </table>
+
+        
+    </div>
+
+<%- include("template/footer") %>
