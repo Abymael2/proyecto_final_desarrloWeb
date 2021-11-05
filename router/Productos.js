@@ -21,10 +21,6 @@ router.get('/', async (req, res) => {
     
 })
 
-
-/*
-
-
 router.get('/crear', (req, res) => {
     res.render('crear')
 })
@@ -35,9 +31,9 @@ router.post('/', async (req, res) => {
         // const mascotaDB = new Mascota(body)
         // await mascotaDB.save()
 
-        await Mascota.create(body)
+        await Producto.create(body)
 
-        res.redirect('/mascotas')
+        res.redirect('/productos')
         
     } catch (error) {
         console.log(error)
@@ -50,11 +46,11 @@ router.get('/:id', async (req, res) => {
 
     try {
 
-        const mascotaDB = await Mascota.findOne({ _id: id })
-        console.log(mascotaDB)
+        const prodaDB = await Producto.findOne({ _id: id })
+        console.log(prodaDB)
 
         res.render('detalle', {
-            mascota: mascotaDB,
+            prod: prodaDB,
             error: false
         })
         
@@ -71,9 +67,9 @@ router.delete('/:id', async (req, res) => {
     const id = req.params.id
 
     try {
-        const mascotaDB = await Mascota.findByIdAndDelete({ _id: id })
+        const prodaDB = await Producto.findByIdAndDelete({ _id: id })
         
-        if (mascotaDB) {
+        if (prodaDB) {
             res.json({
                 estado: true,
                 mensaje: 'eliminado!'
@@ -96,7 +92,7 @@ router.put('/:id', async (req, res) => {
     
     try {
 
-        const mascotaDB = await Mascota.findByIdAndUpdate(id, body, { useFindAndModify: false })
+        const mascotaDB = await Producto.findByIdAndUpdate(id, body, { useFindAndModify: false })
         console.log(mascotaDB)
 
         res.json({
@@ -113,6 +109,6 @@ router.put('/:id', async (req, res) => {
         })
     }
 })
-*/
+
 
 module.exports = router;

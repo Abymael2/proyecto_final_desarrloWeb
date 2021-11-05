@@ -1,19 +1,37 @@
 <%- include("template/cabecera", {tituloWeb: 'Crear nueva mascota'}) %>
 
     <div class="container">
-        <h1>Crear</h1>
-        <form action="/mascotas" method="POST">
+        <h1>Agregar Producto</h1>
+        <form action="/productos" method="POST">
             <input 
                 type="text"
                 placeholder="Agregar nombre"
                 class="form-control my-2"
-                name="nombre"
+                name="nombre" required
+            > 
+            <input 
+                type="text"
+                placeholder="Agregar precio"
+                class="form-control my-2"
+                name="precio" required
             >
             <input 
                 type="text"
                 placeholder="Agregar descripción"
                 class="form-control my-2"
-                name="descripcion"
+                name="descripcion" required
+            >
+            <input 
+                type="text"
+                placeholder="Agregar categoria"
+                class="form-control my-2"
+                name="categoria" required
+            >
+            <input 
+                type="text"
+                placeholder="Agregar codigo"
+                class="form-control my-2"
+                name="codigo" required
             >
             <button
                 class="btn btn-success btn-block"
